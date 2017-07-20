@@ -3,10 +3,7 @@
         "es2015"
     ],
     "plugins": [
-        ["import", {
-            "libraryName": "antd",
-            "libraryDirectory": "lib", // default: lib 
-            "style": true
-        }],
+        "add-module-exports", ["antd", { "style": "css" }],
+        ["import", { "libraryName": "antd", "style": "css" }]
     ]
 }
